@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Unidad 1: Fase 2 - Diseño</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- las tres siguientes líneas son un truco para obtener elementos semánticos de HTML5 que funcionan en versiones de Internet Explorer antiguas -->
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <!-- Aquí empieza el encabezado principal que se mantendrá en todas las páginas del sitio web -->
+
+    <header>
+      <h1>Estructura básica de html5 (etiquetas, atributos y valores)</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="Index.html">Inicio</a></li>
+      </ul>
+     </nav>
+
+    <!-- Aquí está el contenido principal de nuestra página -->
+    <main>
+      <img src="maquetacion.PNG" alt="maquetacion">
+      <!-- Contiene un artículo -->
+        <article>
+            <h2>Objetivo del sitio </h2>
+            <p>Nuestro objetivo general es darles a conocer sobre la estrucuta basica de html 5, que aprendan sobre las etiquetas, los atributos y valores. </p>
+
+        </article>
+
+      <!-- el contenido aparte también se puede anidar dentro del contenido principal -->
+      <aside>
+        <h3>Objetivo específico 1</h3>
+
+        <ul>
+          <li><p>Que son las etiquetas, para que sirven y como usarlas.</p></li>
+        </ul>
+        <h3>Objetivo específico 2</h3>
+
+        <ul>
+          <li><p>Que son los atributos, para que sirven y como usarlos.</p></li>
+        </ul>
+        <h3>Objetivo específico 3</h3>
+
+        <ul>
+          <li><p>Que son los valores o contenidos, para que sirven y como usarlos.</p></li>
+        </ul>
+
+
+        <h3>Materiales</h3>
+        <p>De las siguientes paginas saque la informacion para el desarrollo de la actividad propuesta.</p>
+        <ul>
+            <li><a href="google.com/search?q=estructura+de+tablas+en+html&rlz=1C1CHBF_esCO887CO887&oq=estructura+de+tablas+en+&aqs=chrome.1.69i57j0l7.6697j0j7&sourceid=chrome&ie=UTF-8">Tablas</a></li>
+        </ul>
+        <ul>
+            <li><a href="https://www.arkaitzgarro.com/xhtml/capitulo-3.html#:~:text=Cap%C3%ADtulo%203%20Etiquetas%2C%20atributos%20y,la%20estructura%20b%C3%A1sica%20del%20HTML.&text=Para%20ello%20contamos%20con%20los,dobles%22%20o%20'simples'.">Etiquetas, elementos y atributos</a></li>
+        </ul>              
+      </aside>
+
+      <!-- Contiene un artículo -->
+      <article>
+        <h2>ETIQUETAS, ATRIBUTOS Y ELEMENTOS </h2>
+        <p>Las etiquetas son la estructura básica del HTML. Estas etiquetas o tags se componen y contienen otras propiedades, como son los atributos y el contenido.<br><br>
+
+            HTML define un total de 91 etiquetas, de las cuales 10 se consideran obsoletas. Sin embargo, una etiqueta por sí sola a veces no contiene la suficiente
+            información para estar completamente definida. Para ello contamos con los atributos: pares nombre-valor separados por "=" y escritos en la etiqueta
+            inicial de un elemento después del nombre del elemento. El valor puede estar encerrado entre "comillas dobles" o 'simples'. Existen, también, algunos
+            atributos que afectan al elemento por su presencia en la etiqueta de inicio, como puede ser el atributo ismap para el elemento < img >.<br><br>
+            
+            Esta sería la estructura general de una línea de código en lenguaje HTML: </p>
+
+            <textarea name="code" rows="1" cols="100"><tag attribute1="value1" attribute2="value2">content</tag> </textarea>
+            <br><br>
+            O lo que es lo mismo, con un ejemplo:
+            <br><br>
+            <textarea name="code" rows="1" cols="100"><a href="http://www.enlace.com" target="_blank">Ejemplo de enlace</a> </textarea>
+            <br><br>
+
+            Donde:
+            <br>
+            <ul>
+                <li><p>< a> es la etiqueta o tag inicial y < /a> la etiqueta de cierre.</p></li>
+                <li><p>href y target son los atributos.</p></li>
+                <li><p>http://www.enlace.com y _blank son las variables.</p></li>
+                <li><p>Ejemplo de enlace es el contenido.</p></li>
+              </ul>
+              <br>
+              Aunque también existen elementos vacíos que no necesitan tag de cierre, cuya estructura sería ésta:
+              <br><br>
+              <textarea name="code" rows="1" cols="100"><tag attribute1="value1" attribute2="value2" /></textarea>
+              <br><br>
+              Estos elementos vacíos no constan de contenido, como por ejemplo, los tags < br> o < img>.
+            
+        </article>
+
+        <article>
+            <h2>Atributos basicos</h2>
+            <p>Los atributos básicos se utilizan en la mayoría de etiquetas HTML y XHTML, aunque adquieren mayor sentido cuando se utilizan hojas de estilo en cascada (CSS):</p>
+            <table border="1">
+               
+                <tbody>
+                  <tr>
+                 
+                    <th>Atributo</th>
+                    <th>Descripción</th>
+                  </tr>
+                  <tr>
+                    
+                    <td><textarea name="code" rows="1" cols="20">id="texto"</textarea></td>
+                    <td>Establece un indicador único a cada elemento</td>
+                  </tr>
+                  <tr>
+                    
+                    <td><textarea name="code" rows="1" cols="20">class="texto"</textarea></td>
+                    <td>Establece la clase CSS que se aplica a los estilos del elemento</td>
+                  </tr>
+                  <tr>
+                    
+                    <td><textarea name="code" rows="1" cols="20">style="texto"</textarea></td>
+                    <td>Aplica de forma directa los estilos CSS de un elemento</td>
+                  </tr>
+                  <tr>
+                    
+                    <td><textarea name="code" rows="1" cols="20">title="texto"</textarea></td>
+                    <td>Establece el título del elemento (Mejora la accesibilidad)</td>
+                  </tr>
+                </tbody>
+              </table>
+        </article>
+
+        <article>
+            <h2>Atributos de internacionalización o I18N</h2>
+            <p>Estos atributos se utilizan en aquellas páginas que muestran sus contenidos en varios idiomas y las que quieran indicar de forma explícita el idioma de sus contenidos:</p>
+            <table border="1">
+               
+                <tbody>
+                  <tr>
+                 
+                    <th>Atributo</th>
+                    <th>Descripción</th>
+                  </tr>
+                  <tr>
+                    
+                    <td><textarea name="code" rows="1" cols="20">lang="codigo"</textarea></td>
+                    <td>Indica el idioma del elemento</td>
+                  </tr>
+                  <tr>
+                    
+                    <td><textarea name="code" rows="1" cols="20">xml:lang="codigo"</textarea></td>
+                    <td>Indica el idioma del elemento, aunque tiene más prioridad que el atributo anterior y es obligatorio si se incluye el atributo lang</td>
+                  </tr>
+                  <tr>
+                    
+                    <td><textarea name="code" rows="1" cols="20">dir</textarea></td>
+                    <td>Indica la dirección del texto</td>
+                  </tr>
+
+                </tbody>
+              </table>
+        </article>
+
+        <article>
+            <h2>Atributos de eventos</h2>
+            <p>Estos atributos se utilizan en las páginas web que incluyen código JavaScript para realizar acciones dinámicas sobre los elementos de la página.</p>
+            
+            Pueden ser utilizados por: todos los elementos
+            <table border="1">
+               
+                <tbody>
+                  <tr>
+                 
+                    <th>Atributos</th>
+                    <th>Descripción</th>
+                  </tr>
+                  <tr>
+                    
+                    <td><textarea name="code" rows="1" cols="20">onclick</textarea></td>
+                    <td>Ejecuta la acción cuando se realiza un clic sobre el elemento</td>
+                  </tr>
+                  <tr>
+                    
+                    <td><textarea name="code" rows="1" cols="20">ondblclick</textarea></td>
+                    <td>Ejecuta la acción cuando se realiza un doble clic sobre el elemento</td>
+                  </tr>
+                  <tr>
+                    
+                    <td><textarea name="code" rows="1" cols="20">onmousedown</textarea></td>
+                    <td>Ejecuta la acción cuando se detecta el botón pulsado del ratón</td>
+                  </tr>
+                  <tr>
+                    
+                    <td><textarea name="code" rows="1" cols="20">onmouseup</textarea></td>
+                    <td>Ejecuta la acción cuando se detecta que se ha soltado el botón del ratón</td>
+                  </tr>
+                  <tr>
+                    
+                    <td><textarea name="code" rows="1" cols="20">onmousemove</textarea></td>
+                    <td>Ejecuta la acción cuando se detecta el movimiento del ratón sobre el elemento</td>
+                  </tr>
+                  <tr>
+                    
+                    <td><textarea name="code" rows="1" cols="20">onmouseout</textarea></td>
+                    <td>Ejecuta la acción cuando el ratón abandona el elemento</td>
+                  </tr>
+                  <tr>
+                    
+                    <td><textarea name="code" rows="1" cols="20">onmouseover</textarea></td>
+                    <td>Ejecuta la acción cuando se detecta que el ratón se sitúa sobre el elemento</td>
+                  </tr>                 
+                </tbody>
+              </table>
+            <br>
+              Pueden ser utilizados por: < body>
+              <table border="1">
+               
+                <tbody>
+                  <tr>
+                 
+                    <th>Atributo</th>
+                    <th>Descripción</th>
+                  </tr>
+                  <tr>
+                    
+                    <td><textarea name="code" rows="1" cols="20">onload</textarea></td>
+                    <td>Ejecuta la acción cuando se carga el documento</td>
+                  </tr>
+                  <tr>
+                    
+                    <td><textarea name="code" rows="1" cols="20">onunload</textarea></td>
+                    <td>Ejecuta la acción cuando se abandona el documento</td>
+                  </tr>
+                  <tr>
+                    
+                    <td><textarea name="code" rows="1" cols="20">onresize</textarea></td>
+                    <td>Ejecuta la acción cuando se ha modificado el tamaño de la ventana del navegador</td>
+                  </tr>
+
+                </tbody>
+              </table>
+              <br>
+              Pueden ser utilizados por: elementos de formulario y < body>
+              <table border="1">
+               
+                <tbody>
+                  <tr>
+                 
+                    <th>Atributo</th>
+                    <th>Descripción</th>
+                  </tr>
+                  <tr>
+                    
+                    <td><textarea name="code" rows="1" cols="20">onkeydown</textarea></td>
+                    <td>Ejecuta la acción cuando se detecta que la tecla esta pulsada</td>
+                  </tr>
+                  <tr>
+                    
+                    <td><textarea name="code" rows="1" cols="20">onkeyup</textarea></td>
+                    <td>Ejecuta la acción cuando se detecta que se ha soltado la tecla pulsada</td>
+                  </tr>
+                  <tr>
+                    
+                    <td><textarea name="code" rows="1" cols="20">onkeypress</textarea></td>
+                    <td>Ejecuta la acción cuando se pulsa una tecla</td>
+                  </tr>
+
+                </tbody>
+              </table>
+              <br>
+              Pueden ser utilizados por: varios
+              <table border="1">
+               
+                <tbody>
+                  <tr>
+                 
+                    <th>Atributo</th>
+                    <th>Descripción</th>
+                    <th>Elementos que pueden usarlo</th>
+                  </tr>
+                  <tr>
+                    
+                    <td><textarea name="code" rows="1" cols="20">onblur</textarea></td>
+                    <td>Ejecuta la acción cuando el elemento pierde el foco bien sea a través del ratón o por navegación tabulada</td>
+                    <td><textarea name="code" rows="3" cols="20"><button>, <input>, <label>, <select>, <textarea>, <body></textarea></td>
+                  </tr>
+                  <tr>
+                    
+                    <td><textarea name="code" rows="1" cols="20">onfocus</textarea></td>
+                    <td>Ejecuta la acción cuando el elemento obtiene el foco bien sea a través del ratón o por navegación tabulada</td>
+                    <td><textarea name="code" rows="3" cols="20"><button>, <input>, <label>, <select>, <textarea>, <body></textarea></td>
+                  </tr>
+                  <tr>
+                    
+                    <td><textarea name="code" rows="1" cols="20">onchange</textarea></td>
+                    <td>Ejecuta la acción cuando el valor de un control ha sido modificado</td>
+                    <td><textarea name="code" rows="2" cols="20"><input>, <select>, <textarea></textarea></td>
+                  </tr>
+                  <tr>
+                    
+                    <td><textarea name="code" rows="1" cols="20">onreset</textarea></td>
+                    <td>Ejecuta la acción cuando el formulario es restablecido a sus valores por defecto</td>
+                    <td><textarea name="code" rows="1" cols="20"> <form></textarea></td>
+                  </tr>
+                  <tr>
+                    
+                    <td><textarea name="code" rows="1" cols="20">onselect</textarea></td>
+                    <td>Ejecuta la acción cuando un usuario selecciona texto en un campo de texto</td>
+                    <td><textarea name="code" rows="1" cols="20"><input>, <textarea></textarea></td>
+                  </tr>
+                  <tr>
+                    
+                    <td><textarea name="code" rows="1" cols="20">onsubmit</textarea></td>
+                    <td>Ejecuta la acción cuando el formulario es enviado</td>
+                    <td><textarea name="code" rows="1" cols="20"><form></textarea></td>
+                  </tr>
+                </tbody>
+              </table>                       
+        </article>
+
+        <article>
+            <h2>Atributos de foco</h2>
+            <p>Se le denomina foco o focus, cuando un control o elemento del documento ha sido seleccionado.
+                 Cuando ese elemento deja de estar seleccionado, "pierde el foco" y es el nuevo elemento seleccionado el que se dice que tiene "el foco".</p>
+            <table border="1">
+               
+                <tbody>
+                  <tr>
+                 
+                    <th>Atributo</th>
+                    <th>Descripción</th>
+                  </tr>
+                  <tr>
+                    
+                    <td><textarea name="code" rows="1" cols="20">accesskey="letra"</textarea></td>
+                    <td>Establece una tecla de acceso rápido a un elemento HTML</td>
+                  </tr>
+                  <tr>
+                    
+                    <td><textarea name="code" rows="1" cols="20">tabindex="numero"</textarea></td>
+                    <td>Establece la posición del elemento en el orden de tabulación de la página (valor entre 0 y 32.767)</td>
+                  </tr>
+                  <tr>
+                    
+                    <td><textarea name="code" rows="1" cols="20">onfocus, onblur</textarea></td>
+                    <td>Indica la dirección del texto</td>
+                  </tr>
+
+                </tbody>
+              </table>
+        </article>
+
+        <article>
+          <h2>Elementos </h2>
+          <p>Además de etiquetas y atributos, HTML define el término elemento para referirse a las partes que componen los documentos HTML.
+             Como ya hemos mencionado antes, la estructura general de una línea de código en lenguaje HTML sería ésta:<br><br>
+             
+             <textarea name="code" rows="1" cols="100"><tag attribute1="value1" attribute2="value2"><tag attribute1="value1" attribute2="value2">content</tag></textarea>
+             <br> <br>
+             El lenguaje HTML clasifica a todos los elementos en dos grupos: elementos en línea o inline elements y elementos en bloque 
+             o block elements.
+             <br><br>
+             La diferencia entre ambos viene dada por el modelo de contenido, por el formato y la dirección. La principal diferencia entre 
+             los dos tipos de elementos es la forma en la que ocupan el espacio disponible en la página: los elementos en bloque siempre 
+             empiezan en una nueva línea y ocupan todo el espacio disponible hasta el final de la línea, mientras que los elementos en línea
+              sólo ocupan el espacio necesario para mostrar sus contenidos. 
+              <br><br>
+              Los elementos en línea definidos por HTML son: a, abbr, acronym, b, basefont, bdo, big, br, cite, code, dfn, em, font, i, img,
+               input, kbd, label, q, s, samp, select, small, span, strike, strong, sub, sup, textarea, tt, u, var.
+              <br><br>
+              Los elementos de bloque definidos por HTML son: address, blockquote, center, dir, div, dl, fieldset, form, h1, h2, h3, h4, h5,
+               h6, hr, isindex, menu, noframes, nos-cript, ol, p, pre, table, ul.
+              <br><br>
+              Los siguientes elementos también se considera que son de bloque: dd, dt, frame-set, li, tbody, td, tfoot, th, thead, tr.
+              <br><br>
+              Los siguientes elementos pueden ser en línea y de bloque según las circunstancias: button, del, iframe, ins, map, object,
+               script.
+              
+              
+            </p>
+
+              
+          </article>
+    </main>
+
+    <!-- Y aquí está nuestro pie de página principal que se utiliza en todas las páginas de nuestro sitio web -->
+
+    <footer>
+      <p>©Copyright 2050 de nadie. Todos los derechos revertidos.</p>
+    </footer>
+
+  </body>
+</html>
