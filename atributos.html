@@ -20,25 +20,27 @@
 
 	</header>
 <p>
-  <div class="container" ><p>
-    <ul>
-        <a href="Index.html">Inicio</a>
-    <button type="button" class="btn "
-            data-toggle="dropdown">
-            Conceptos <span class="caret"></span>
-    </button>
-  
-    <ul class="dropdown-menu" role="menu">
-        <li><a href="#">Acción #1</a></li>
-        <li><a href="#">Acción #2</a></li>
-    </ul>
-      <a href="recursos.html">Recursos</a>
-      <a href="autor.html">Autor</a>
-    </ul>
-  </div>
+    <div class="container" ><p>
+        <ul>
+            <a href="Index.html">Inicio</a>
+        <button type="button" class="btn "
+                data-toggle="dropdown">
+                Conceptos <span class="caret"></span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+            <li><a href="etiquetas.html">Etiquetas</a></li>
+            <li><a href="atributos.html">Atributos</a></li>
+            <li><a href="elementos.html">Elementos</a></li>
+        </ul>
+          <a href="recursos.html">Recursos</a>
+          <a href="autor.html">Autor</a>
+        </ul>
+      </div>
   <p>
 		<div class="container" style="height:auto"> <p>
-				<h1><img src="img/foto.PNG"  class="img-responsive" style="width:100px; height: 80px; display: inline-block;" /> Estructura básica de html5 (etiquetas, atributos y valores)</h1>
+                <h1><img src="img/foto.PNG"  class="img-responsive" style="width:100px; height: 80px; display: inline-block;" /> 
+                    ATRIBUTOS</h1>
 		</div>
 	
 	<p>
@@ -47,40 +49,7 @@
       <div class="container">
         <p>
     
-          <h2>ETIQUETAS, ATRIBUTOS Y ELEMENTOS </h2>
-          <p>Las etiquetas son la estructura básica del HTML. Estas etiquetas o tags se componen y contienen otras propiedades, como son los atributos y el contenido.<br><br>
-  
-              HTML define un total de 91 etiquetas, de las cuales 10 se consideran obsoletas. Sin embargo, una etiqueta por sí sola a veces no contiene la suficiente
-              información para estar completamente definida. Para ello contamos con los atributos: pares nombre-valor separados por "=" y escritos en la etiqueta
-              inicial de un elemento después del nombre del elemento. El valor puede estar encerrado entre "comillas dobles" o 'simples'. Existen, también, algunos
-              atributos que afectan al elemento por su presencia en la etiqueta de inicio, como puede ser el atributo ismap para el elemento < img >.<br><br>
-              
-              Esta sería la estructura general de una línea de código en lenguaje HTML: </p>
-  
-              <textarea name="code" rows="1" cols="100"><tag attribute1="value1" attribute2="value2">content</tag> </textarea>
-              <br><br>
-              O lo que es lo mismo, con un ejemplo:
-              <br><br>
-              <textarea name="code" rows="1" cols="100"><a href="http://www.enlace.com" target="_blank">Ejemplo de enlace</a> </textarea>
-              <br><br>
-  
-              Donde:
-              <br>
-              <ul>
-                  <li><p>< a> es la etiqueta o tag inicial y < /a> la etiqueta de cierre.</p></li>
-                  <li><p>href y target son los atributos.</p></li>
-                  <li><p>http://www.enlace.com y _blank son las variables.</p></li>
-                  <li><p>Ejemplo de enlace es el contenido.</p></li>
-                </ul>
-                <br>
-                Aunque también existen elementos vacíos que no necesitan tag de cierre, cuya estructura sería ésta:
-                <br><br>
-                <textarea name="code" rows="1" cols="100"><tag attribute1="value1" attribute2="value2" /></textarea>
-                <br><br>
-                Estos elementos vacíos no constan de contenido, como por ejemplo, los tags < br> o < img>.
-              
-          </article>
-  
+
           <article>
               <h2>Atributos basicos</h2>
               <p>Los atributos básicos se utilizan en la mayoría de etiquetas HTML y XHTML, aunque adquieren mayor sentido cuando se utilizan hojas de estilo en cascada (CSS):</p>
@@ -335,41 +304,6 @@
                   </tbody>
                 </table>
           </article>
-  
-          <article>
-            <h2>Elementos </h2>
-            <p>Además de etiquetas y atributos, HTML define el término elemento para referirse a las partes que componen los documentos HTML.
-               Como ya hemos mencionado antes, la estructura general de una línea de código en lenguaje HTML sería ésta:<br><br>
-               
-               <textarea name="code" rows="1" cols="100"><tag attribute1="value1" attribute2="value2"><tag attribute1="value1" attribute2="value2">content</tag></textarea>
-               <br> <br>
-               El lenguaje HTML clasifica a todos los elementos en dos grupos: elementos en línea o inline elements y elementos en bloque 
-               o block elements.
-               <br><br>
-               La diferencia entre ambos viene dada por el modelo de contenido, por el formato y la dirección. La principal diferencia entre 
-               los dos tipos de elementos es la forma en la que ocupan el espacio disponible en la página: los elementos en bloque siempre 
-               empiezan en una nueva línea y ocupan todo el espacio disponible hasta el final de la línea, mientras que los elementos en línea
-                sólo ocupan el espacio necesario para mostrar sus contenidos. 
-                <br><br>
-                Los elementos en línea definidos por HTML son: a, abbr, acronym, b, basefont, bdo, big, br, cite, code, dfn, em, font, i, img,
-                 input, kbd, label, q, s, samp, select, small, span, strike, strong, sub, sup, textarea, tt, u, var.
-                <br><br>
-                Los elementos de bloque definidos por HTML son: address, blockquote, center, dir, div, dl, fieldset, form, h1, h2, h3, h4, h5,
-                 h6, hr, isindex, menu, noframes, nos-cript, ol, p, pre, table, ul.
-                <br><br>
-                Los siguientes elementos también se considera que son de bloque: dd, dt, frame-set, li, tbody, td, tfoot, th, thead, tr.
-                <br><br>
-                Los siguientes elementos pueden ser en línea y de bloque según las circunstancias: button, del, iframe, ins, map, object,
-                 script.
-                
-                
-              </p>
-              <img src="maquetacion.PNG" alt="maquetacion">
-                
-            </article>
-      </main>
-  
-  
   
     <p>
   </div>     
